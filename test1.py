@@ -5,6 +5,8 @@ import math
 
 import time
 
+import test
+
 
 # for i in xrange(10000):
 # 	#转化为整型值
@@ -140,6 +142,18 @@ def test(str):
 	return
 
 test("设么东西")
+
+
+def sum( a, b):
+	print a+b
+	return a+b 
+
+
+sum(3,4)
+
+test.sum(5,6)
+
+
 
 
 
