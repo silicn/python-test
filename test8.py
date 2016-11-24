@@ -13,6 +13,6 @@ print('type: ', type(result2))
 
 for info in result2.readlines():
     if "JiaHao" in info:
-        print info
+        print info.
     else:
         print "error"

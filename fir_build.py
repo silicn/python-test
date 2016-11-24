@@ -4,14 +4,15 @@
 import subprocess
 
 fir_token = "454213ff6ed0b48cdd56fdc751977cdc"
-out_put_path = "Users/JiaHao/Desktop/build/"
+out_put_path = "/Users/JiaHao/Desktop/Archers/"
 
 def buildProject():
     log =  raw_input('输入build log:')
     buildCmd = 'fir build_ipa /Users/JiaHao/Desktop/YunKeAssistant/YunKeAssistant1.0.1 -o %s -p -c "%s" -Q -T %s' %(out_put_path,log,fir_token)
+    print buildCmd
     process = subprocess.Popen(buildCmd, shell = True)
-	process.wait()
-    print "success"
+	# process.wait()
+    print "build xcode success"
 
 def main():
     buildProject()
